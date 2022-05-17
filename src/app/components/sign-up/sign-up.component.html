@@ -1,0 +1,46 @@
+<div class="form">
+    <h3>Sign Up</h3>
+    <a href="/login" class="ref">Have an account?</a>
+    <form [formGroup]="authForm">
+        <div class="containerInput">
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" required formControlName="username" placeholder="Username" required>
+        </div>
+                <div *ngIf="username!.invalid && (username!.dirty || username!.touched)" class="alert alert-danger">
+                    <div *ngIf="username!.errors?.['required']">
+                    Name is required.
+                    </div>  
+                    <div *ngIf="username!.errors?.['pattern']">
+                    Name is not valid.
+                    </div>
+                </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" required formControlName="email" placeholder="Email" required>
+        </div>
+                    <div *ngIf="userEmail!.invalid && (userEmail!.dirty || userEmail!.touched)" class="alert alert-danger"> Valid Email is
+                        required.
+                        <div *ngIf="userEmail!.errors?.['required']" class="alert alert-danger">Email is required.</div>
+                    </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" required formControlName="password" placeholder="Password" required>
+        </div>
+                    <div *ngIf="userPassword!.invalid && (userPassword!.dirty || userPassword!.touched)" class="alert alert-danger">
+                        Password must have at least one Lowercase Character, must contain at least one Digit and at least one Special
+                        Symbol.
+                        <div *ngIf="userPassword!.errors?.['required']">
+                            Password is required.
+                        </div>
+                        <div *ngIf="userPassword!.errors?.['minlength']">
+                            Password is required. Password must be at least 8 characters long.
+                        </div>
+                        <div *ngIf="userPassword!.errors?.['mustBePasswordValidator']">
+                            Password is not valid.
+                        </div>
+                    </div>
+                                <div *ngIf="fieldError && problemError" class="alert alert-danger">
+                                    <p>{{fieldError}}: {{problemError}}</p>
+                                </div>
+    <button type="submit" class="btn btn-primary" (click)="login()" [disabled]="!authForm.valid">Sign Up</button>
+    </div>
+    </form>
+</div>  

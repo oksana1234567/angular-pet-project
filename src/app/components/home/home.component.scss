@@ -1,0 +1,148 @@
+.hero {
+  background-color: var(--home-color);
+  color: white;
+  text-align: center;
+  padding: 1.7rem;
+
+  & {
+    font-weight: bold;
+  }
+}
+
+.article {
+  position: relative;
+  width: 85%;
+}
+
+.articleAuthorAvatar {
+  border-radius: 50%;
+  height: 90%;
+  max-height: 2rem;
+}
+
+.articleAuthorName {
+  color: var(--primary-lightBlue-color);
+  margin-left: 0.3rem;
+}
+
+.articleDate {
+  color: gray;
+  font-size: 0.7rem;
+  margin-bottom: 0px;
+  margin-left: 0.3rem;
+}
+
+.articleTag {
+  margin-top: 0.2rem;
+  margin-right: 0.4rem;
+  font-size: 0.7rem;
+}
+
+.articleTags {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.btn-link {
+  color: var(--primary-lightBlue-color);
+  margin-top: 1.1rem;
+}
+
+.article::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background: var(--primary-light-color);
+  border-radius: 0.1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.articleText {
+  color: var(--primary-dark-color);
+  width: 78%;
+  margin-bottom: 0.75rem;
+}
+
+.articleReadMore {
+  color: var(--primary-light-color);
+  font-size: 0.8rem;
+}
+
+.allArticles {
+  position: relative;
+}
+
+.tags {
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.tagsHead {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.tag {
+  margin-bottom: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.buttons button {
+  margin-left: 0.5rem;
+}
+
+.buttons {
+  margin-top: 0.5rem;
+}
+
+.deleteTagBtn::after {
+  content: "\2715";
+}
+
+.noArticle {
+  margin: 1rem;
+  text-align: center;
+}
+
+.containerPosition {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.paginationPosition {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.btn-outline-primary {
+  color: var(--primary-lightBlue-color);
+  border-color: var(--primary-lightBlue-color);
+}
+
+.btn-outline-primary:hover {
+  color: var(--primary-lightBlue-color);
+  border-color: var(--primary-lightBlue-color);
+}
+
+.btn-secondary {
+  border-color: var(--primary-lightGrey-color);
+  background-color: var(--primary-lightGrey-color);
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.btn-light {
+  background-color: rgb(235, 238, 238);
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.likeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,35 @@
+.navLinks {
+  li {
+    margin-left: 1.1rem;
+    font-size: 1rem;
+  }
+
+  a {
+    color: rgb(129, 124, 124);
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: black;
+  }
+
+  .active {
+    color: var(--primary-dark-color);
+  }
+}
+
+.logo {
+  color: var(--home-color);
+  font-weight: 700;
+}
+
+.image {
+  max-width: 1.5rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+}
+
+.logoutIcon {
+  max-width: 1rem;
+}

@@ -1,0 +1,148 @@
+.hero {
+  background-color: var(--primary-darkBlue-color);
+  color: white;
+  padding: 1.5rem 0px;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.aboutAuthor {
+  margin-left: 1.5rem;
+}
+
+.aboutAuthor * {
+  margin-left: 0.2rem;
+}
+
+.aboutAuthor {
+  margin-left: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.followBtn {
+  margin-left: 1.3rem;
+}
+
+.likeBtn {
+  margin-left: 0.5rem;
+}
+
+.likeBtn::before {
+  content: "\1F49A";
+}
+
+.article::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background: var(--primary-light-color);
+  border-radius: 0.1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.toLogIn {
+  margin: 0.5rem 0rem;
+  text-align: center;
+}
+
+.blockquote {
+  font-size: 1rem;
+}
+
+.articleDateComment {
+  margin-left: 0.8rem;
+  margin-bottom: 0px;
+}
+
+.articleAuthorAvatar {
+  border-radius: 50%;
+  height: 90%;
+  max-height: 2rem;
+  align-items: center;
+}
+.articleAuthorName {
+  color: var(--primary-lightBlue-color);
+}
+
+.commentContainer {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.commentButton {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+}
+
+.articleDate {
+  font-size: 0.7rem;
+  margin-bottom: 0px;
+}
+
+.card-header {
+  font-size: 0.9rem;
+}
+
+.articleBody {
+  margin: 3rem 0.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-dark-color);
+}
+
+.card {
+  margin-top: 0.8rem;
+}
+
+.cardOwnComment {
+  position: relative;
+}
+
+.deleteComment {
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.2rem;
+}
+
+.btn-secondary {
+  border-radius: 10px;
+}
+
+.articleField * {
+  margin-left: 0.2rem;
+}
+
+.buttonUn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  border: none;
+  background: rgb(29, 95, 139);
+  color: white;
+}
+
+.tag {
+  border-color: rgb(235, 238, 238);
+  background-color: rgb(235, 238, 238);
+  margin-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  width: auto;
+  padding: 0.3rem 1rem;
+}
+
+.action {
+  color: var(--primary-lightBlue-color);
+}
+
+.author {
+  margin-right: 0.8rem;
+}
